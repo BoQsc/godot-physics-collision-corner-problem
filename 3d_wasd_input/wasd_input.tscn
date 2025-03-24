@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8cd0i7ebroaa"]
+
+[ext_resource type="Script" uid="uid://clnbdebc50lve" path="res://addons/3d_wasd_input/wasd_input.gd" id="1_upwri"]
+
+[node name="WASDInput" type="Node"]
+script = ExtResource("1_upwri")
