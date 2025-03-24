@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://dnj44jpe75u4h"]
 
-[ext_resource type="Script" path="res://camera_3d.gd" id="1_a202f"]
+[ext_resource type="Script" uid="uid://dlfoj3wodicsb" path="res://camera_3d.gd" id="1_a202f"]
 
 [sub_resource type="GDScript" id="GDScript_noarx"]
 script/source = "extends CharacterBody3D
@@ -35,7 +35,7 @@ func _physics_process(delta: float) -> void:
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_4xowi"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_a202f"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a202f"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4xowi"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -63,7 +63,7 @@ script = SubResource("GDScript_noarx")
 mesh = SubResource("CapsuleMesh_4xowi")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-shape = SubResource("SphereShape3D_a202f")
+shape = SubResource("CapsuleShape3D_a202f")
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
